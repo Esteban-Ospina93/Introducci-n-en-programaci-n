@@ -1,2 +1,2 @@
-# Introducci-n-en-programaci-n
+# Introduccion en programacion
 Ejercicios de introducción de desarrollo de software
