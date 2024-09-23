@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url(../imagenes/chess-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    background-color: rgb(238, 233, 226);
+    opacity: 50%;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.contenedor {
+    margin-top: 50px;
+    padding: 40px;
+    width: 750px;
+    height: 750px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 83.75px);
+    grid-template-rows: repeat(8, 83.75px);
+    background-image: url(../imagenes/Tablero-de-ajedrez-01.jpg);
+    background-size: cover;
+}
+
+.tablero {
+    width: 670px;
+    height: 670px;
+    position: absolute;
+}
+
+.pieza-blanca, .pieza-blanca2, .pieza-negra {
+    margin: 2px;
+}
+
+.pieza-blanca img, .pieza-blanca2 img, .pieza-negra img{
+    width: 75px;
+}
+
+.pieza-blanca {
+    grid-row-start: 8;
+}
+
+.pieza-blanca2 {
+    grid-row-start: 7;
+}
