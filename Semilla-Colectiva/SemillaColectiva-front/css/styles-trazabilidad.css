@@ -1,0 +1,235 @@
+:root {
+  --color-white: white;
+  --color-marfil: #e0ded1;
+  --color-durazno: #e5c49c;
+  --color-salvia: #4e6a5b;
+  --color-verde: #283b28;
+  --color-oliva: #282b1b;
+  --color-negro: #00070a;
+  --font-sm: 1.2rem;
+  --font-md: 1.4rem;
+  --font-lg: 1.6rem;
+  --font-xlg: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 93.75%
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+.montserrat-alternates-light {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-alternates-regular {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-alternates-semibold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-alternates-bold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-alternates-extrabold {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.item {
+  flex: 1 1 200px;
+  min-width: 200px; 
+  max-width: 300px; 
+  background-color: #f0f0f0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Formulario modal */
+
+.modal-content {
+  background-color: var(--color-marfil);
+  color: var(--color-verde);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-body {
+  background-color: var(--color-salvia);
+}
+
+.modal-title {
+  font-weight: 700;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--color-oliva);
+}
+
+.form-control,
+.form-select {
+  border: 2px solid var(--color-verde);
+  background-color: var(--color-white);
+  color: var(--color-negro);
+  border-radius: 6px;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--color-verde);
+  box-shadow: 0 0 0 0.2rem rgba(78, 106, 91, 0.25);
+}
+
+/* === BOTÓN ENVIAR === */
+#btnEnviar {
+  background-color: var(--color-marfil);
+  color: var(--color-negro);
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#btnEnviar:hover:enabled {
+  background-color: var(--color-oliva);
+  color: var(--color-durazno);
+}
+
+#verHistorial {
+  color: var(--color-marfil);
+  
+}
+
+#verHistorial.activo:hover {
+  color: var(--color-durazno);
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo caja de carga de imagen */
+.image-drop-box {
+  border: 2px dashed var(--color-salvia);
+  background-color: var(--color-durazno);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  color: var(--color-negro);
+}
+
+.image-drop-box:hover {
+  background-color: #f5deb3;
+}
+
+.image-drop-box input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.image-drop-box:hover {
+  background-color: var(--color-durazno);
+}
+
+/* Ocultar input de archivo pero permitir clic */
+.image-drop-box input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.drop-text {
+  font-weight: 500;
+  color: var(--color-verde);
+  z-index: 1;
+}
+
+/* Estilo del contenedor y preview */
+.image-preview-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.image-preview {
+  display: none;
+  max-height: 200px;
+  border-radius: 10px;
+  border: 2px solid var(--color-verde);
+  background-color: var(--color-white);
+  padding: 5px;
+}
+
+.card.h-100 {
+  max-width: 300px;
+  margin: auto;
+  background-color: var(--color-marfil);
+  color: var(--color-verde);
+  font-family: 'Montserrat Alternates', sans-serif;
+  border: 2px solid var(--color-salvia);
+  border-radius: 1rem;
+}
+
+/* Imagen de la card */
+.card-img-top {
+  height: fit-content;
+  object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* Título y texto */
+.card-title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--color-oliva);
+}
+
+.card-text {
+  font-size: var(--font-md);
+  font-weight: 400;
+  color: var(--color-verde);
+}
+
+.subtitle {
+  font-size: var(--font-lg);
+  font-weight: 600;
+  color: var(--color-marfil);
+  margin-top: 20px;
+}
+
+.background {
+  min-height: 700px;
+  height: fit-content;
+  background-color: var(--color-marfil);
+  padding-bottom: 3rem;
+  transition: min-height 0.3s ease;
+}

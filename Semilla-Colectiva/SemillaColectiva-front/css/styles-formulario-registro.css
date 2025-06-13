@@ -1,0 +1,35 @@
+:root {
+  --color-white: white;
+  --color-marfil: #e0ded1;
+  --color-durazno: #e5c49c;
+  --color-salvia: #4e6a5b;
+  --color-verde: #283b28;
+  --color-oliva: #282b1b;
+  --color-negro: #00070a;
+  --font-sm: 1.2rem;
+  --font-md: 1.4rem;
+  --font-lg: 1.6rem;
+  --font-xlg: 1.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 93.75%;
+}
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+label {
+  font-size: var(--font-sm);
+}
+
+input,
+select,
+button {
+  font-size: var(--font-sm);
+}
